@@ -17,13 +17,14 @@ $susy: (
   container-position: center,
   columns: 12,
   gutters: 20/60,
+  gutter-position: split,
   column-width: 60px
 );
 
 // Breakpoints (size, columns or columns number)
-$break-small: 20em, 4;
-$break-medium: 40em, 8;
-$break-large: 60em, 12;
+$break-small: 20em, 4; // 320px Phones
+$break-medium: 40em, 8; // 640px Tablets
+$break-large: 60em, 12; // 960px Desktop
 
 $color-primary: #9EAF56;
 $color-secondary: #418D4B;
@@ -42,7 +43,7 @@ $color-secondary: #418D4B;
 
 // Module
 // ----------------------------------------------
-// Modules are the reusable, modular parts of our design. They are the callouts, the buttons, 
+// Modules are the reusable, modular parts of our design. They are the callouts, the buttons,
 // the products and so on. (Micro elements)
 //
 // /* Example module: Product */
