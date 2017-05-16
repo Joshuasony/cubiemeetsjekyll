@@ -2,3 +2,6 @@
 
 User-agent: *
 Sitemap: http://www.wearecube.ch/frontendcubie/sitemap.xml
+
+#Disallow: /page1/
+#Disallow: /page2/

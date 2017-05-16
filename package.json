@@ -1,38 +1,46 @@
 {
-  "name": "FrontendCubie",
+  "name": "cubiemeetsjekyll",
   "version": "1.0.0",
-  "description": "Cubie is an HTML5 starter kit that includes: package and task management, local server with browser synchronization, beautiful auto-generated documentation, styles pre-processor, files minification and images optimisation",
-  "homepage": "http://www.wearecube.ch/frontendcubie/",
+  "description": "",
+  "homepage": "http://www.wearecube.ch/Joshuasony/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wearecube/frontend-cubie.git"
+    "url": "http://www.wearecube.ch/Joshuasony/cubiemeetsjekyll.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pierre Fritsch <fritsch@puzzle.ch>",
+  "author": "Joshua Schär <schaer@puzzle.ch>",
   "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^2.6.4",
+    "check-pages": "^0.10.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.2.0",
     "gulp-concat": "^2.5.2",
+    "gulp-env": "^0.4.0",
     "gulp-header": "^1.2.2",
     "gulp-hologram": "^1.2.0",
     "gulp-imagemin": "^2.2.1",
     "gulp-inject": "^1.2.0",
+    "gulp-jekyll": "0.0.0",
     "gulp-jshint": "^1.10.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-minify-css": "^1.1.0",
     "gulp-minify-html": "^1.0.2",
     "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.1.0",
     "gulp-sitemap": "^2.1.0",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-svgstore": "^5.0.1",
     "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.7",
     "imagemin-pngquant": "^4.1.0",
     "jshint-stylish": "^1.0.1",
+    "run-sequence": "^1.1.5",
+    "ssl-root-cas": "^1.1.10",
+    "vinyl-ftp": "^0.4.5",
     "wiredep": "^2.2.2"
   },
   "dependencies": {}

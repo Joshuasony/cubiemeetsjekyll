@@ -1,6 +1,6 @@
 .log
 .tmp
- 
+
 .DS_Store
 .DS_Store?
 ._*
@@ -10,6 +10,6 @@ ehthumbs.db
 Thumbs.db
 
 node_modules
-.sass-cache
 bower_components
-app
+.sass-cache
+dist
