@@ -1,0 +1,12 @@
+# Set your default language and define additional ones.
+default: de
+list:
+  - id: de
+    ext:
+    label: Deutsch
+  - id: fr
+    ext: -fr
+    label: Français
+  - id: en
+    ext: -en
+    label: English
