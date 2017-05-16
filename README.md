@@ -1,28 +1,16 @@
-# Cubie
+# Cubie meets Jekyll
 
-## The little front-end companion
+## The little front-end companion meets the power of Jekyll
 
 Cubie is an HTML5 starter kit that includes: package and task management, local server with browser synchronization, beautiful auto-generated documentation, styles pre-processor, files minification and images optimisation.
 
-## A collection of tools
-
-* [Gulp](http://gulpjs.com/)
-* [Bower](http://bower.io/)
-* [HTML5 Boilerplate](https://html5boilerplate.com/)
-* [LibSass](http://libsass.org/)
-* [Susy](http://susy.oddbird.net/)
-* [Breakpoint Sass](http://breakpoint-sass.com)
-* [Autoprefixer](https://github.com/postcss/autoprefixer)
-* [Hologram](http://trulia.github.io/hologram/)
-* [BrowserSync](http://www.browsersync.io/)
-
 ## Requirements
 
-You'll need to have the following items installed before continuing.
+You'll need to have the following things installed before continuing.
 
   * [Ruby](https://www.ruby-lang.org/en/documentation/installation/): Use the installer provided on the website.
-  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Gulp](http://gruntjs.com/): Run `[sudo] npm install --global gulp`
+  * [Node.js](https://nodejs.org/en/): Use the installer provided on the NodeJS website.
+  * [Yarn](https://yarnpkg.com/lang/en/docs/install/): In the terminal run `yarn install --global gulp`
 
 ## Quickstart
 
@@ -30,28 +18,37 @@ Open you terminal, go to the folder: `cd [your_path]/frontend-cubie/`
 And then install the dependencies:
 
 ```
-npm install
-bower install
+yarn
+bundle install
 ```
 
-While you're working on your project, run:
+## Commands
 
-`gulp` to generate the pages
+* `gulp serve`
+* `gulp deploy` builds and uploads using provided SFTP-configuration in `config.sftp.json`
 
-And you're set!
+## SFTP Config
 
+To deploy set a config.
+
+<pre>
+	{
+		"SFTPHOST" : "whatever.host",
+		"SFTPUSER" : "username",
+		"SFTPPWD"   : "password",
+		"NODE_TLS_REJECT_UNAUTHORIZED": "0"
+	}
+</pre>
 
 ## Directory Structure
 
 * `src/`: The sources
-* `src/index.html`: The content of the homepage
+* `src/jekyll`: The content
 * `src/assets`: Images, fonts, icons...
 * `src/scripts`: Javascripts
 * `src/styles`: SASS files
 
-* `app/`: The generated pages (overwritten overtime your run gulp)
-* `app/styleguide`: The auto-generated documentation
-
+* `dist/`: The generated pages (overwritten overtime your run gulp)
 
 ## How to add an icon?
 
@@ -65,18 +62,9 @@ And you're set!
 
 * Run `gulp` again
 
-##TODO
+## Translations
 
-* [x] Base grid system?
-* [x] HTML mininfied
-* [x] Images optimization
-* [x] SVG Icons 
-* [X] Add ModernizR
-* [ ] Create a Yeoman package generator
-* [ ] Template system (assemble? handlebars?)
-* [ ] Browser caching (filerev?)
-* [ ] Tests (karma?)
-* [ ] Better documentation
+* Translations are found in the directory `src/jekyll/_data/locales`
 
 ## Author
 
