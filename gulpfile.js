@@ -238,19 +238,6 @@ gulp.task("checkProd", function(callback) {
 
 // DEPLOY
 
-gulp.task('convertAgb', function() {
-    gulp.src('src/jekyll/_includes/agb.md')
-        .pipe(pandocWriter({
-            outputDir: dist + "agb/",
-            inputFileType:'.md',
-            outputFileType: '.docx',
-            args: [
-                '--smart'
-            ]
-        }))
-        .pipe(gulp.dest(dist));
-});
-
 gulp.task('upload', function(){
   env({file: 'config.sftp.json'});
 
@@ -270,29 +257,10 @@ gulp.task('upload', function(){
 
 });
 
-gulp.task('tempUpload', function(){
-  env({file: 'config.sftp.json'});
-
-  var conn = ftp.create( {
-          host:     process.env.SFTPHOST,
-          user:     process.env.SFTPUSER,
-          password: process.env.SFTPPWD,
-          parallel: 10,
-          secure: true,
-          secureOptions: true,
-          log:      gutil.log
-      } );
-
-  return gulp.src(dist + "**/*", {base: 'dist/', buffer: false})
-    .pipe( conn.newer('/temp'))
-    .pipe( conn.dest('/temp'));
-
-});
-
 // BUILD
 
 gulp.task('build',function(callback) {
-  runSequence('jekyll',['copy', 'vendors', 'template', 'images', 'fonts', 'scripts', 'styles', 'convertAgb'],
+  runSequence('jekyll',['copy', 'vendors', 'template', 'images', 'fonts', 'scripts', 'styles'],
 callback);
 });
 
