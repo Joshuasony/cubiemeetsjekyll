@@ -26,8 +26,21 @@ $break-small: 20em, 4; // 320px Phones
 $break-medium: 40em, 8; // 640px Tablets
 $break-large: 60em, 12; // 960px Desktop
 
+// Color variables
 $color-primary: #9EAF56;
 $color-secondary: #418D4B;
+
+$color-lightergray: #fdfbfb;
+$color-lightgray: #ebedee;
+
+$color-brown: $color-primary;
+$color-beige: $color-primary;
+$color-beige-2: $color-primary;
+$color-dark: $color-primary;
+
+// Other variables
+$header-height: 4em;
+$header-logo-height: 2.5em;
 
 
 // Base
@@ -60,6 +73,7 @@ $color-secondary: #418D4B;
 @import 'module/button';
 @import 'module/icon';
 @import 'module/nav';
+@import 'module/section';
 
 
 // Layout
@@ -72,6 +86,7 @@ $color-secondary: #418D4B;
 @import 'layout/form';
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/home';
 
 
 // Page
