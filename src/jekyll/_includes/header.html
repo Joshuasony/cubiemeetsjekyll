@@ -1,8 +1,10 @@
 <header class="header-container" role="banner">
-  {% include nav.html %}
-  <div class="header-logo">
-    <a href="{{site.data.locales[page.lang].navigation.home-link}}">
-      <img src="/assets/images/frontend_cubie.svg" alt="Logo" />
-    </a>
+  <div class="grid-container">
+    <div class="header-logo">
+      <a href="{{site.data.locales[page.lang].navigation.home-link}}">
+        <img src="/assets/images/frontend_cubie.svg" alt="Logo"/>
+      </a>
+    </div>
+    {% include nav.html %}
   </div>
 </header>

@@ -1,108 +1,28 @@
-/*doc
----
-title: Horizontal navigation
-name: navigation
-category: Module
----
-
-Responsive hotizontal menu.
-
-```html_example
-<nav class="header-nav nav-horizontal" role="navigation">
-  <ul>
-    <li>
-      <a href="/">Home</a>
-    </li>
-    <li>
-      <a href="/styleguide">Styleguide</a>
-    </li>
-    <li>
-      <a href="https://github.com/wearecube">Github repo</a>
-    </li>
-  </ul>
-</nav>
-```
-*/
-
-.nav-horizontal ul {
-  @include reset-list;
-
+.nav .nav-menu-toggle {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-end;
-  
-  @include susy-breakpoint($break-medium) {
-    flex-flow: row wrap;
-    padding: 0;
-  }
-}
-.nav-horizontal li {
-  margin-top: rem-calc(1);
-  @include susy-breakpoint($break-medium) {
-    margin-top: 0;
-    margin-left: rem-calc(1);
-  }
-  &:first-child {
-    margin: 0;
-  }
-}
-.nav-horizontal a {
-  display: block;
-  padding: rem-calc(12);
-  background: $color-secondary;
-  color: white;
-  text-decoration: none;
-  transition: background-color 300ms ease;
-
-  @include susy-breakpoint($break-medium) {
-    padding: rem-calc(6 12);
-  }
-
-  &:hover {
-    background-color: $color-primary;
-  }
-}
-
-.nav-language ul {
-  @include reset-list;
-  display: flex;
-}
-
-// Mobile nav
-.nav-menu-toggle {
-  display: block;
+  flex-flow: row nowrap;
+  align-items: center;
   float: right;
+  text-transform: uppercase;
   margin-top: 0.8em;
-  padding: 0.5em;
+  padding: 0 0.5em;
   height: 2em;
-  font-size: rem-calc(16);
-  border: 0px solid #cecece;
-  border-radius: 0.1em;
+  background-color: $color-beige;
+
   @include susy-breakpoint($break-medium) {
     display: none;
   }
 }
 
-.nav-menu-close {
+.nav .nav-menu-close {
+  text-align: right;
+  font-size: rem-calc(10);
+
   @include susy-breakpoint($break-medium) {
     display: none;
   }
 }
 
-#nav-menu-toggle {
-  display: none;
-}
-
-#nav-menu-toggle:not(:checked) + ul {
-  display: none;
-  @include susy-breakpoint($break-medium) {
-    display: flex;
-  }
-}
-
-// #nav-menu-toggle:checked + ul {
-//   font-size: rem-calc(12);
-// }
 
 .nav > ul {
   @include reset-list;
@@ -124,6 +44,86 @@ Responsive hotizontal menu.
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    font-size: rem-calc(14);
   }
+}
+
+.nav #nav-menu-toggle {
+  display: none;
+}
+
+.nav #nav-menu-toggle:not(:checked) + ul {
+  display: none;
+
+  @include susy-breakpoint($break-medium) {
+    display: flex;
+  }
+}
+
+
+.nav #nav-menu-toggle:checked + ul {
+  font-size: rem-calc(12);
+
+}
+
+.nav > ul a {
+  display: list-item;
+  margin-top: rem-calc(1);
+  padding: rem-calc(14);
+  border-top: 1px solid $color-beige;
+
+  @include susy-breakpoint($break-medium) {
+    margin-top: 0;
+    border: none;
+  }
+
+  &:first-child {
+    margin: 0;
+    border: none;
+  }
+}
+
+// Language Nav
+.nav .nav-language {
+  border-left: 1px solid $color-lightgray;
+  color: $color-beige-2;
+  padding: rem-calc(14);
+}
+
+.nav .nav-language ul {
+  @include reset-list;
+  display: flex;
+  font-size: rem-calc(14);
+  justify-content: center;
+}
+
+
+.nav .nav-language a {
+  padding: 0 rem-calc(6);
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.nav li {
+  display: inline;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  @include susy-breakpoint($break-medium) {
+    float: right;
+  }
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: $color-dark;
+  font-size: rem-calc(18);
+}
+
+.nav li.active {
+  font-weight: bold;
 }

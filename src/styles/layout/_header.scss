@@ -1,27 +1,22 @@
-/*doc
----
-title: Header
-name: header
-category: Layout
----
-
-```html_example
-<header class="header-container" role="banner">
-  The header's content gets here
-</header>
-```
-*/
-
 .header-container {
-  padding: rem-calc(24 0);
+  position: fixed;
+  width: 100%;
+  height: $header-height;
+  vertical-align:middle;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1), 0 1px 1px 0 rgba(0,0,0,0.1);
 }
+
 .header-logo {
-  text-align: center;
-  margin-top: rem-calc(48);
-  
-  @include susy-breakpoint($break-medium) {
-    float: left;
-    margin-top: 0;
-    text-align: left;
+  text-align: left;
+  float: left;
+  margin-top: 0;
+  text-align: left;
+  padding: (($header-height - $header-logo-height) / 2) 0;
+
+  img {
+    height: $header-logo-height;
+    width: auto; // overriding normalize.css width: 100%
   }
 }

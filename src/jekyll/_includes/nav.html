@@ -1,9 +1,8 @@
 <nav class="header-nav nav nav-horizontal" role="navigation">
   {% assign locale = site.data.locales[page.lang].navigation %}
   <label for="nav-menu-toggle" class="nav-menu-toggle">
+    <svg class="icon is-inline"><use xlink:href="#menu"></use></svg>
     {{locale.menu}}
-    <svg class="icon-menu"><use                 xlink:href="#icon-menu"></use>
-    </svg>
   </label>
   <input id="nav-menu-toggle" type="checkbox">
   <ul id="nav-menu">
