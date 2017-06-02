@@ -13,3 +13,28 @@ body {
   color: #444;
   background: white;
 }
+
+// Helpers
+// ----------------------------------------------
+.is-hidden {
+  display: none;
+}
+
+.is-center {
+  text-align: center;
+}
+
+// medium+ screen sizes
+.desktop-only {
+  display: none !important;
+}
+
+@media screen and (min-width: 960px) {
+    .mobile-only {
+        display: none !important;
+    }
+
+    .desktop-only {
+        display: block !important;
+    }
+}
