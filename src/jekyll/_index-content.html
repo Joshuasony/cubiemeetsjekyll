@@ -1,0 +1,24 @@
+{% assign locale = site.data.locales[page.lang] %}
+<section class="section home-hero">
+  <div class="grid-container">
+    <h1>
+      <img src="/assets/images/frontend_cubie.svg" alt="Logo" class="icon"/>
+      {{ locale.home.hero.title }}
+      <img src="/assets/images/jekyll-notext-light-transparent.png" alt="Logo" class="icon"/>
+    </h1>
+    <h2>{{ locale.home.hero.subtitle }}</h2>
+    <p>{{ locale.home.hero.desc }}</p>
+  </div>
+</section>
+<section class="section home-tools">
+  <div class="grid-container">
+    <h2>A collection of tools</h2>
+    <ul>
+      {% for tool in locale.home.tools %}
+        <li>
+          <a href="{{tool.link}}">{{tool.title}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

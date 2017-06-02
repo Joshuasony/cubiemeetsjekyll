@@ -1,0 +1,46 @@
+# Navigation
+navigation:
+  home: Home
+  home-link: index.html
+  page1: Page 1
+  page1-link: page1.html
+  page2: Page 2
+  page2-link: page2.html
+  menu: Menu # Mobile Nav
+# Content Homepage
+home:
+  hero:
+    title: Cubie meets Jekyll
+    subtitle: The little front-end companion
+    desc: "Cubie is an HTML5 starter kit that includes: package and task management, local server with browser synchronization, beautiful auto-generated documentation, styles pre-processor, files minification and images optimisation."
+  tools:
+    -
+      link: https://yarnpkg.com/
+      title: Yarn
+    -
+      link: https://jekyllrb.com/
+      title: Jekyll
+    -
+      link: http://gulpjs.com
+      title: Gulp
+    -
+      link: https://bower.io/
+      title: Bower
+    -
+      link: https://html5boilerplate.com/
+      title: HTML5 Boilerplate
+    -
+      link: http://breakpoint-sass.com
+      title: Breakpoint Sass
+    -
+      link: http://libsass.org/
+      title: LibSass
+    -
+      link: http://susy.oddbird.net
+      title: Susy
+    -
+      link: https://github.com/postcss/autoprefixer
+      title: Autoprefixer
+    -
+      link: https://browsersync.io/
+      title: BrowserSync
