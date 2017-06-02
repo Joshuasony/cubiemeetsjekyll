@@ -198,10 +198,8 @@ gulp.task('sitemap', function () {
 gulp.task("checkDev", [ "serve" ], function(callback) {
   var options = {
     pageUrls: [
-      'http://localhost:3000',
-      'http://localhost:3000/partner/',
-      'http://localhost:3000/faq/',
-      'http://localhost:3000/agb/'
+      'http://localhost:3000'
+      // Add your pages here
     ],
     checkLinks: true,
     linksToIgnore: [
@@ -228,10 +226,8 @@ gulp.task("checkDev", [ "serve" ], function(callback) {
 gulp.task("checkProd", function(callback) {
   var options = {
     pageUrls: [
-      'http://lezzgo.ch',
-      'http://lezzgo.ch/partner',
-      'http://lezzgo.ch/faq',
-      'http://lezzgo.ch/agb'
+      'http://lezzgo.ch'
+      // Add your pages here
     ],
     checkLinks: true,
     summary: true,

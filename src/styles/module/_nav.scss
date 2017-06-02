@@ -62,3 +62,68 @@ Responsive hotizontal menu.
     background-color: $color-primary;
   }
 }
+
+.nav-language ul {
+  @include reset-list;
+  display: flex;
+}
+
+// Mobile nav
+.nav-menu-toggle {
+  display: block;
+  float: right;
+  margin-top: 0.8em;
+  padding: 0.5em;
+  height: 2em;
+  font-size: rem-calc(16);
+  border: 0px solid #cecece;
+  border-radius: 0.1em;
+  @include susy-breakpoint($break-medium) {
+    display: none;
+  }
+}
+
+.nav-menu-close {
+  @include susy-breakpoint($break-medium) {
+    display: none;
+  }
+}
+
+#nav-menu-toggle {
+  display: none;
+}
+
+#nav-menu-toggle:not(:checked) + ul {
+  display: none;
+  @include susy-breakpoint($break-medium) {
+    display: flex;
+  }
+}
+
+// #nav-menu-toggle:checked + ul {
+//   font-size: rem-calc(12);
+// }
+
+.nav > ul {
+  @include reset-list;
+  display: block;
+  position: fixed;
+  right: 1em;
+  top: 4em;
+  min-width: 15em;
+  z-index: 1;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+
+  @include susy-breakpoint($break-medium) {
+    border-radius: 4px;
+    box-shadow: none;
+    position: absolute;
+    top: 0.4em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: rem-calc(14);
+  }
+}

@@ -1,0 +1,8 @@
+navigation:
+  home: Home
+  home-link: index.html
+  page1: Page 1
+  page1-link: page1.html
+  page2: Page 2
+  page2-link: page2.html
+  menu: Menu # Mobile Nav
