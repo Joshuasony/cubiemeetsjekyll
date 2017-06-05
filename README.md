@@ -1,4 +1,4 @@
-# Cubie meets Jekyll
+# Cubie meets Jekyll ! WIP
 
 ## The little front-end companion meets the power of Jekyll
 
@@ -9,7 +9,6 @@ Cubie is an HTML5 starter kit that includes: package and task management, local 
 You'll need to have the following things installed before continuing.
 
   * [Ruby](https://www.ruby-lang.org/en/documentation/installation/): Use the installer provided on the website.
-  * [Node.js](https://nodejs.org/en/): Use the installer provided on the NodeJS website.
   * [Yarn](https://yarnpkg.com/lang/en/docs/install/): In the terminal run `yarn install --global gulp`
 
 ## Quickstart
@@ -19,6 +18,7 @@ And then install the dependencies:
 
 ```
 yarn
+bower install
 bundle install
 ```
 
@@ -43,14 +43,14 @@ To deploy set a config.
 ## Directory Structure
 
 * `src/`: The sources
-* `src/jekyll`: The content
+* `src/jekyll`: The content of the site
 * `src/assets`: Images, fonts, icons...
 * `src/scripts`: Javascripts
 * `src/styles`: SASS files
 
 * `dist/`: The generated pages (overwritten overtime your run gulp)
 
-## How to add an icon?
+## How to add an icon? --> needs to change!
 
 * Start by creating or choosing a vector icon from the [Entypo library](http://www.entypo.com/)
 * Add the SVG-formatted icon in `src/assets/icons/`

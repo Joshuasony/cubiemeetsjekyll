@@ -20,7 +20,6 @@
     "gulp-concat": "^2.5.2",
     "gulp-env": "^0.4.0",
     "gulp-header": "^1.2.2",
-    "gulp-hologram": "^1.2.0",
     "gulp-imagemin": "^2.2.1",
     "gulp-inject": "^1.2.0",
     "gulp-jekyll": "0.0.0",
