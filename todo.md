@@ -9,6 +9,7 @@
 * [ ] Create locales for all content
 * [ ] Style 404
 * [ ] Test gulp tasks
+  * [ ] Checkout [Wepp](https://www.npmjs.com/package/gulp-webp)
 * [ ] Integrate Google Lighthouse Performance and other recommendations
 * [ ] find another way to include icons since xlink not supported anymore
 * [ ] readme changes: cubie changed quite a bit (list changes?)
